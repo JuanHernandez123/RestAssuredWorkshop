@@ -1,4 +1,4 @@
-package dataDrivenTesting;
+package employeeapi.testCases;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -8,13 +8,13 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import employeeapi.utilities.ReadXlsFile;
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import utilities.ReadXlsFile;
 
-public class dataDrivenTest_Add_New_Employees {
+public class Add_New_Employees_From_Excel {
 
 	@Test(dataProvider = "dataProvider")
 	void addNewEmployees(String pName, String pSalary, String pAge) {
@@ -72,7 +72,7 @@ public class dataDrivenTest_Add_New_Employees {
 	// get data from external data source
 	String[][] getData() throws IOException {
 		String pathDataSource = System.getProperty("user.dir")
-				+ "/src/test/java/dataDrivenTesting/dataSource/empdata.xlsx";
+				+ "/dataSource/empdata.xlsx";
 
 		int rowNumber = ReadXlsFile.getRowCount(pathDataSource, "Sheet1");
 		int columnCount = ReadXlsFile.getCellCount(pathDataSource, "Sheet1", 1); // the 0 position is the header

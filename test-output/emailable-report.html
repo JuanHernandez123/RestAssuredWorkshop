@@ -9,16 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7.504</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">2.226</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">dataDrivenTesting.dataDrivenTest_Add_New_Employees</td><td><a href="#m0">addNewEmployees</a></td><td rowspan="1">1634055751345</td><td rowspan="1">791</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">dataDrivenTesting.dataDrivenTest_Add_New_Employees</td><td><a href="#m1">addNewEmployees</a></td><td rowspan="4">1634055750356</td><td rowspan="4">988</td></tr><tr class="passedeven"><td><a href="#m2">addNewEmployees</a></td></tr><tr class="passedeven"><td><a href="#m3">addNewEmployees</a></td></tr><tr class="passedeven"><td><a href="#m4">addNewEmployees</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">employeeapi.testCases.TC005_GET_Request</td><td><a href="#m0">validateJSONResponse</a></td><td rowspan="1">1634171972591</td><td rowspan="1">2183</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">dataDrivenTesting.dataDrivenTest_Add_New_Employees#addNewEmployees</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>User3</td><td>80000</td><td>35</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
-	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
-	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
-	at io.restassured.path.json.JsonPath.get(JsonPath.java:202)
-	at dataDrivenTesting.dataDrivenTest_Add_New_Employees.addNewEmployees(dataDrivenTest_Add_New_Employees.java:44)
+<h2>Default test</h2><h3 id="m0">employeeapi.testCases.TC005_GET_Request#validateJSONResponse</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:819)
+	at org.testng.Assert.assertEquals(Assert.java:829)
+	at employeeapi.testCases.TC005_GET_Request.validateJSONResponse(TC005_GET_Request.java:27)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,19 +49,6 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading &apos;&lt;&apos;, no possible valid JSON value or punctuation could be recognized.
-	at groovy.json.JsonLexer.nextToken(JsonLexer.java:86)
-	at groovy.json.JsonLexer$nextToken.call(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parse(ConfigurableJsonSlurper.groovy:97)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper$parse.callCurrent(Unknown Source)
-	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:83)
-	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
-	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
-	... 32 more
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">dataDrivenTesting.dataDrivenTest_Add_New_Employees#addNewEmployees</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>User2</td><td>70000</td><td>40</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">dataDrivenTesting.dataDrivenTest_Add_New_Employees#addNewEmployees</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>User1</td><td>40000</td><td>30</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">dataDrivenTesting.dataDrivenTest_Add_New_Employees#addNewEmployees</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>User4</td><td>240000</td><td>45</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">dataDrivenTesting.dataDrivenTest_Add_New_Employees#addNewEmployees</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>User5</td><td>740000</td><td>50</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

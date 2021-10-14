@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataDrivenTesting.dataDrivenTest_Add_New_Employees">
+      <class name="employeeapi.testCases.TC005_GET_Request">
         <methods>
-          <include name="addNewEmployees" invocation-numbers="2"/>
+          <include name="validateJSONResponse"/>
         </methods>
-      </class> <!-- dataDrivenTesting.dataDrivenTest_Add_New_Employees -->
+      </class> <!-- employeeapi.testCases.TC005_GET_Request -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
