@@ -1,4 +1,4 @@
-package com.employeeapi.testCases;
+package com.employeeapi.testCases.basicTestCases;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;

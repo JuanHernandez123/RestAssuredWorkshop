@@ -1,4 +1,4 @@
-package com.employeeapi.testCases;
+package com.employeeapi.testCases.basicTestCases;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
