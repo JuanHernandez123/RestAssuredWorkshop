@@ -1,4 +1,4 @@
-package employeeapi.testCases;
+package com.employeeapi.testCases;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -8,7 +8,8 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import employeeapi.utilities.ReadXlsFile;
+import com.employeeapi.utilities.ReadXlsFile;
+
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
 import io.restassured.response.Response;

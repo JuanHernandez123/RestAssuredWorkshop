@@ -1,4 +1,4 @@
-package employeeapi.testCases;
+package com.employeeapi.testCases;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
