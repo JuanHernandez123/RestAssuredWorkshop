@@ -3,18 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.employeeapi.testCases.TC001_Get_All_Employees">
+      <class name="com.employeeapi.testCases.TC002_Get_Single_Employee_Record">
         <methods>
+          <include name="checkserverType"/>
           <include name="setup"/>
           <include name="checkContentType"/>
-          <include name="tearDown"/>
-          <include name="getAllEmployees"/>
-          <include name="checkcontentEncoding"/>
-          <include name="checkstatusLine"/>
+          <include name="getEmployeeData"/>
           <include name="checkContentLenght"/>
-          <include name="checkStatusCode"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.employeeapi.testCases.TC001_Get_All_Employees -->
+      </class> <!-- com.employeeapi.testCases.TC002_Get_Single_Employee_Record -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

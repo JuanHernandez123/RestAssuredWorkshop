@@ -11,7 +11,7 @@ import io.restassured.specification.RequestSpecification;
 public class TestBase {
 	public static RequestSpecification httpRequest;
 	public static Response response;
-	public String empID = "1"; // Hard coded - Input for get details og the single Employee & update employee
+	public String empID = "3"; // Hard coded - Input for get details og the single Employee & update employee
 	
 	public Logger logger;
 	
