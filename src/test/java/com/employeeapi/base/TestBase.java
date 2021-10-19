@@ -17,7 +17,6 @@ public class TestBase {
 	
 	@BeforeClass
 	public void setup() {
-		//Hello word
 		//This implementation is created for read the logs
 		//This function is taking into account the setup in the file C:\Automation_Projects\APITestingRestAssured_V10\log4j.properties
 		logger= Logger.getLogger("EmployeesRestAPI");// Usually is the name of the project
