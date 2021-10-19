@@ -1,0 +1,2 @@
+cd C:\Automation_Projects\APITestingRestAssured_V10
+mvn clean install
